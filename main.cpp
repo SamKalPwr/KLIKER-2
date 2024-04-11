@@ -98,11 +98,11 @@ int main() {
     do {
         input = game.view.podajDane();
         if (input == 'b') {
-            game.model.dodajPunkty(); // modyfikacja danych
+            game.model.dodajPunkty();
             game.model.dodajLevel();
-            game.model.Zapisz(); // zapis danych
-            game.view.wypiszDane1(game.model.podajPunkty()); // wizualizacja danych
-            game.view.wypiszDane2(game.model.podajLevel()); // wizualizacja danych
+            game.model.Zapisz();
+            game.view.wypiszDane1(game.model.podajPunkty());
+            game.view.wypiszDane2(game.model.podajLevel());
         }
     } while(input != 'e');
 
