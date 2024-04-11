@@ -28,7 +28,7 @@ class GameModel {
         }
 
     void Zapisz() {
-        ofstream plik("wyniki.txt");// W trybie trunc usuwa zawartosc pliku i pozwala na nadpisywanie
+        ofstream plik("wyniki.txt");
         plik << "Punkty: " << punkty << " || " << "Level: " << poziom;
         plik.close();
     }
